@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Edit</title>
+    </head>
+
+    <body>
+        <h1>Edit: <%= animal.name %>!</h1>
+        <form action="/animals/<%= animal.id %>" method='post'>
+            <label for="name">Name</label>
+            <input type="text" name="name" value="<%= animal.name %>">
+            <label for="weight">Weight</label>
+            <input type="text" name="weight" value="<%= animal.weight %>">
+            <label for="color">Color</label>
+            <input type="text" name="color" value="<%= animal.color %>">
+            <input type="submit" value="Edit dog!">
+        </form>
+        <a href="/">Home</a>
+    </body>
+
+</html>
