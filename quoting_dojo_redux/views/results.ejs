@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Quote Results</title>
+    </head>
+    <body>
+        <h1>Quote Results</h1>
+        <div class="">
+            <h2>Here are all the Quotes:</h2>
+            <% for (var i = 0; i < allQuotes.length; i++) { %>
+                <p>Name: <%=allQuotes[i].name %></p>
+                <p>Quote: <%=allQuotes[i].quote %></p>
+                <br>
+            <% } %>
+        </div>
+    </body>
+</html>
